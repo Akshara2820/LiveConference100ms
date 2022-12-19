@@ -109,8 +109,8 @@ form h2,
 }
 
 .peer-video {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
   border-radius: 40%;
   object-fit: cover;
   margin-bottom: 10px;
