@@ -1,6 +1,5 @@
 import JoinForm from "./JoinForm";
 import Header from "./Header";
-// import "./styles.css";
 import Conference from "./Conference";
 import { useEffect } from "react";
 import {

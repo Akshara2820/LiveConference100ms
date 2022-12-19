@@ -1,7 +1,4 @@
 import { useAVToggle } from "@100mslive/react-sdk";
-import {BsMicMute} from 'react-icons/bs';
-import {GoUnmute} from 'react-icons/go';
-import {BsCameraVideoFill, BsCameraVideoOffFill} from 'react-icons/bs';
 
 function Footer() {
   const {
@@ -12,11 +9,11 @@ function Footer() {
   } = useAVToggle();
   return (
     <div className="control-bar">
-      <button className="" onClick={toggleAudio}>
-        {isLocalAudioEnabled ? <GoUnmute className="mute"/> : <BsMicMute  className="mute"/>}
+      <button className="btn-control" onClick={toggleAudio}>
+        {isLocalAudioEnabled ? "Mute" : "Unmute"}
       </button>
-      <button className="" onClick={toggleVideo}>
-        {isLocalVideoEnabled ? <BsCameraVideoFill className="mute"/> : < BsCameraVideoOffFil className="mute"/>}
+      <button className="btn-control" onClick={toggleVideo}>
+        {isLocalVideoEnabled ? "Hide" : "Unhide"}
       </button>
     </div>
   );
