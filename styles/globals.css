@@ -102,18 +102,23 @@ form h2,
 }
 
 .peers-container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  place-items: center;
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  /* grid-template-columns: repeat(3, minmax(min-content, 1fr)); */
+  /* place-items: center; */
+  /* grid-gap: 10px; */
 }
 
 .peer-video {
   height: 250px;
-  width: 350px;
+  width: 250px;
   border-radius: 10%;
   object-fit: cover;
   margin-bottom: 10px;
+}
+@media (max-width:4) {
+  
 }
 
 .local.peer-video {
@@ -128,9 +133,13 @@ form h2,
 .peer-container {
   padding: 10px;
 }
+.mute{
+  font-size: 24px;
+}
 
 .control-bar {
   display: flex;
+  gap:20px;
   position: fixed;
   bottom: 0;
   width: 100%;
