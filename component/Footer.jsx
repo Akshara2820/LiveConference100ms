@@ -13,10 +13,10 @@ function Footer() {
   return (
     <div className="control-bar">
       <button className="" onClick={toggleAudio}>
-        {isLocalAudioEnabled ? <BsMicMute className="mute"/> : <GoUnmute  className="mute"/>}
+        {isLocalAudioEnabled ? <GoUnmute className="mute"/> : <BsMicMute  className="mute"/>}
       </button>
       <button className="" onClick={toggleVideo}>
-        {isLocalVideoEnabled ? <BsCameraVideoOffFill className="mute"/> : <BsCameraVideoFill className="mute"/>}
+        {isLocalVideoEnabled ? <BsCameraVideoFill className="mute"/> : < BsCameraVideoOffFil className="mute"/>}
       </button>
     </div>
   );
